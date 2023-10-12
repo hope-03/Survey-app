@@ -7,11 +7,694 @@
     tools:context=".MainActivity3"
     android:background="#25242c">
 
-    <View
-        android:id="@+id/view3"
-        android:layout_width="411dp"
-        android:layout_height="75dp"
-        android:background="#F19104"
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.navigation.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F19104"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/survey"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Survey ref"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="84dp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/c_shape"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Carriageway shape (1-6)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="141dp" />
+
+                <EditText
+                    android:id="@+id/editTextc_shape"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/c_surface"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Carriageway surface (1-5)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="141dp" />
+
+                <EditText
+                    android:id="@+id/editTextc_surface"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/o_condition"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Overall condition (1-5)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="261dp" />
+
+                <EditText
+                    android:id="@+id/editText_O_condition"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="15dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="2"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spot"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Spot improvement (m)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="334dp" />
+
+                <EditText
+                    android:id="@+id/editTextspot"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="15dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/l_drainage"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Left drainage (1-5)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="407dp" />
+
+
+                <EditText
+                    android:id="@+id/editTextl_drainage"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="3"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/s_drainage"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Left special drainage (m)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="466dp" />
+
+                <EditText
+                    android:id="@+id/editTextSdrainage"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="4"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/l_slopes"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Left slopes (0-2)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+                <EditText
+                    android:id="@+id/editTextLslope"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="15dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/r_drainage"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Right drainage (1-5)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+                <EditText
+                    android:id="@+id/editTextRdrainage"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="15dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="3"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sp_drainage"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Right special drainage(m)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+                <EditText
+                    android:id="@+id/editTextSpdrainage"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="3"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/r_slopes"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Right slopes (0-2)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+                <EditText
+                    android:id="@+id/editTextRslope"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gravel"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Gravel thickness"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+                <EditText
+                    android:id="@+id/editTextGravel"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="Yes"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/s_type"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Surface type"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="84dp" />
+
+                <EditText
+                    android:id="@+id/editTextStype"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="EG Engineering gravel"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/culverts_r"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Culverts-repair"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="84dp" />
+
+                <EditText
+                    android:id="@+id/editTextCulverts_r"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="4"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/culverts_n"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Culverts-new"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="84dp" />
+
+                <EditText
+                    android:id="@+id/editTextCulverts_n"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bridges_r"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bridges-repair"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="84dp" />
+
+                <EditText
+                    android:id="@+id/editTextBridges_r"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bridges_n"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bridges-new"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="84dp" />
+
+                <EditText
+                    android:id="@+id/editTextBridges_n"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/River"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="River protection(m)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="84dp" />
+
+                <EditText
+                    android:id="@+id/editTextRiver"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layoutDirection="rtl"
+                    android:text="Urgent"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/r_notez"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="13dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Notes:"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+                <EditText
+                    android:id="@+id/editTextNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="25dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="UP"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="210dp"
+
+                    android:background="@drawable/button2"
+                    android:text="Save" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

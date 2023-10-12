@@ -62,11 +62,21 @@ public class FormAdapter extends RecyclerView.Adapter<FormViewHolder>{
 
 class FormViewHolder extends RecyclerView.ViewHolder{
 
-    public TextView road,link;
+    public TextView road,link,corridor,start,start2,end,end2,region,shoulder,sub_link;
     public FormViewHolder(@NonNull View itemView) {
         super(itemView);
 
         this.road = itemView.findViewById(R.id.formRoad);
         this.link = itemView.findViewById(R.id.formLink);
+        this.corridor = itemView.findViewById(R.id.corridor);
+        this.start = itemView.findViewById(R.id.editTextStart);
+        this.start2 = itemView.findViewById(R.id.editTextStart2);
+        this.end = itemView.findViewById(R.id.editTextEnd);
+        this.end2 = itemView.findViewById(R.id.editTextEnd2);
+        this.region = itemView.findViewById(R.id.editTextRegion);
+        this.shoulder = itemView.findViewById(R.id.editTextShoulder);
+        this.sub_link = itemView.findViewById(R.id.editTextLink);
+
+
     }
 }

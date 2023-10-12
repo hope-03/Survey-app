@@ -3,20 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_margin="3dp">
+    android:layout_margin="3dp"
+    android:background="#D2E5ED">
 
     <TextView
         android:id="@+id/formRoad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Road"
-        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="#F19104"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/formLink"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#25242c"
+        android:padding="10dp"
+        android:textSize="18sp"
         android:text="Link"/>
 
 </LinearLayout>

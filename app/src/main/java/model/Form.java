@@ -87,8 +87,7 @@ public class Form {
         this.shoulder_type = shoulder_type;
     }
 
-    public Form(int id, String road, String link, String sub_link, String start, String end, String corridor, String region, String shoulder_type) {
-        this.id = id;
+    public Form(String road, String link, String sub_link, String start, String end, String corridor, String region, String shoulder_type) {
         this.road = road;
         this.link = link;
         this.sub_link = sub_link;
@@ -97,5 +96,8 @@ public class Form {
         this.corridor = corridor;
         this.region = region;
         this.shoulder_type = shoulder_type;
+    }
+    public String toString(){
+        return getRoad();
     }
 }

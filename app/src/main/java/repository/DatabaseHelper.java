@@ -47,6 +47,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + END_COL + " TEXT,"
                 + CORRIDOR_COL + " TEXT)";
         sqLiteDatabase.execSQL(query);
+
+            createForm(sqLiteDatabase,5);
+
+
     }
 
     @Override
@@ -54,22 +58,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
-    public void createForm(Form form){
-        SQLiteDatabase db = this.getWritableDatabase();
+    public void createForm(SQLiteDatabase db,int i){
 
         ContentValues values = new ContentValues();
+        for (int j = 0; j < i; j++) {
+            values.put(ROAD_COL,"Road "+j);
+            values.put(LINK_COL,"Link "+j);
+            values.put(SUBLINK_COL,"Sublink "+j);
+            values.put(START_COL,"Mbezi "+j);
+            values.put(END_COL,"Kivukoni "+j);
+            values.put(CORRIDOR_COL,"Corridor "+j);
+            values.put(REGION_COL,"Dar es salaam");
+            values.put(SHOULDER_COL, "Shoulder "+j);
+        }
 
-        values.put(ROAD_COL,form.getRoad());
-        values.put(LINK_COL,form.getLink());
-        values.put(SUBLINK_COL,form.getSub_link());
-        values.put(START_COL,form.getStart());
-        values.put(END_COL,form.getEnd());
-        values.put(CORRIDOR_COL,form.getCorridor());
-        values.put(REGION_COL,form.getRegion());
-        values.put(SHOULDER_COL,form.getShoulder_type());
 
         db.insert(TABLE_NAME,null,values);
-        db.close();
 
     }
     public ArrayList<Form> getAllForms(){
@@ -86,6 +90,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 form.setId(Integer.parseInt(cursor.getString(0)));
                 form.setRoad(cursor.getString(1));
                 form.setLink(cursor.getString(2));
+                form.setCorridor(cursor.getString(3));
+                form.setCorridor(cursor.getString(4));
+                form.setCorridor(cursor.getString(5));
+                form.setCorridor(cursor.getString(6));
+                form.setCorridor(cursor.getString(7));
+                form.setCorridor(cursor.getString(8));
+
+
+
                 forms.add(form);
             }while (cursor.moveToNext());
         }
